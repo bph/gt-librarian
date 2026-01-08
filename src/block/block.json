@@ -1,0 +1,64 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "gt-librarian/chat-embed",
+	"version": "1.0.0",
+	"title": "GT Librarian Chat",
+	"category": "widgets",
+	"icon": "format-chat",
+	"description": "AI-powered chat assistant embed",
+	"supports": {
+		"html": false,
+		"align": true
+	},
+	"textdomain": "gt-librarian",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"attributes": {
+		"bot": {
+			"type": "string",
+			"default": ""
+		},
+		"avatar": {
+			"type": "string",
+			"default": ""
+		},
+		"firstMessage": {
+			"type": "string",
+			"default": ""
+		},
+		"hideInputArea": {
+			"type": "boolean",
+			"default": false
+		},
+		"clearOnError": {
+			"type": "boolean",
+			"default": false
+		},
+		"notice": {
+			"type": "string",
+			"default": ""
+		},
+		"ttl": {
+			"type": "number",
+			"default": 86400000
+		},
+		"utmSource": {
+			"type": "string",
+			"default": ""
+		},
+		"utmMedium": {
+			"type": "string",
+			"default": ""
+		},
+		"utmCampaign": {
+			"type": "string",
+			"default": ""
+		},
+		"utmTargetDomain": {
+			"type": "string",
+			"default": ""
+		}
+	}
+}

@@ -1,0 +1,52 @@
+/**
+ * Settings page styles
+ */
+
+.gt-librarian-settings {
+	max-width: 1200px;
+	margin: 20px 0;
+
+	.components-card {
+		margin-top: 20px;
+	}
+
+	.components-panel__body {
+		border-bottom: 1px solid #ddd;
+	}
+
+	.components-panel__row {
+		display: block;
+		margin-bottom: 20px;
+
+		.components-base-control {
+			margin-bottom: 0;
+		}
+	}
+
+	.gt-librarian-settings-actions {
+		margin-top: 24px;
+		padding-top: 16px;
+		border-top: 1px solid #ddd;
+	}
+
+	.gt-librarian-settings-loading {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 60px 20px;
+
+		.components-spinner {
+			margin-bottom: 20px;
+		}
+
+		p {
+			font-size: 14px;
+			color: #666;
+		}
+	}
+
+	.components-notice {
+		margin: 20px 0;
+	}
+}
