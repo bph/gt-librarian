@@ -584,7 +584,9 @@ export class ChatLogic {
 
   async sendFeedback(positive: boolean, event: MouseEvent) {
     const target = event.target as Element;
-    const messageId = target?.getAttribute("data-message-id");
+    // Find the SVG element with data-message-id (in case user clicked on child path element)
+    const iconElement = target.closest(".feedback-icon") as Element;
+    const messageId = iconElement?.getAttribute("data-message-id");
     if (!messageId || !this._chatId) return;
 
     const feedbackContainer = target.closest(".feedback");
@@ -608,7 +610,7 @@ export class ChatLogic {
         positive,
         this._sessionId!
       );
-      target.setAttribute(
+      iconElement.setAttribute(
         "fill",
         positive
           ? "var(--feedback-positive-color)"
