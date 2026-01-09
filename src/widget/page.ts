@@ -200,8 +200,8 @@ const widgetStyles = `
         right: 20px;
         width: 400px;
         height: 700px;
-        max-height: calc(100vh - 110px);
-        top: 20px;
+        max-height: calc(100vh - 162px);
+        top: 52px;
         border-radius: 10px;
         background: white;
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);

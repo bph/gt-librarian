@@ -1,7 +1,7 @@
 {
   "name": "gt-librarian",
-  "version": "1.2.1",
-  "description": "AI-powered chat embed block for WordPress",
+  "version": "1.2.2",
+  "description": "AI-powered chat blocks for WordPress",
   "main": "index.js",
   "scripts": {
     "build": "npm run build:widget && npm run build:wp",

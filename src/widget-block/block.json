@@ -3,10 +3,10 @@
 	"apiVersion": 3,
 	"name": "gt-librarian/chat-widget",
 	"version": "1.0.0",
-	"title": "GT Librarian Chat Widget",
+	"title": "GT Librarian - Floating Chat",
 	"category": "widgets",
 	"icon": "format-chat",
-	"description": "Floating chat button that appears in the corner of the page",
+	"description": "Floating chat button fixed in the corner of the page",
 	"supports": {
 		"html": false,
 		"align": false

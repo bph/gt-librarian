@@ -3,10 +3,10 @@
 	"apiVersion": 3,
 	"name": "gt-librarian/chat-embed",
 	"version": "1.0.0",
-	"title": "GT Librarian Chat",
+	"title": "GT Librarian - Inline Chat",
 	"category": "widgets",
 	"icon": "format-chat",
-	"description": "AI-powered chat assistant embed",
+	"description": "Inline chat interface embedded directly in your page content",
 	"supports": {
 		"html": false,
 		"align": true
