@@ -5,6 +5,12 @@ All notable changes to GT Librarian will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.1] - 2026-01-09
+
+### Fixed
+- GitHub Issue #3: Widget window now respects viewport height with max-height constraint and top positioning to prevent title section from extending beyond top of window
+- GitHub Issue #2: Improved vertical spacing consistency between chat list and input box by adjusting input area padding from 16px to 12px and changing alignment from flex-end to center
+
 ## [1.2.0] - 2026-01-09
 
 ### Added

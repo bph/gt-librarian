@@ -179,10 +179,10 @@ export class ChatLogic {
   private getInputAreaStyle() {
     return {
       display: this._hideInputArea ? "none" : "flex",
-      padding: "16px 20px",
+      padding: "12px 20px",
       borderTop: "1px solid #e5e7eb",
       backgroundColor: "#ffffff",
-      alignItems: "flex-end",
+      alignItems: "center",
       gap: "12px",
     };
   }
