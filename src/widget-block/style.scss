@@ -1,0 +1,10 @@
+/**
+ * Frontend and editor styles for the GT Librarian Chat Widget block
+ */
+
+.gt-librarian-chat-widget {
+	// Minimal wrapper styles - the chat-widget web component handles all styling
+	chat-widget {
+		display: block;
+	}
+}

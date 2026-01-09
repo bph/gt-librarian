@@ -1,0 +1,43 @@
+/**
+ * Editor-only styles for the GT Librarian Chat Widget block
+ */
+
+.gt-librarian-chat-widget-block {
+	padding: 20px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	background: #f9f9f9;
+
+	.gt-librarian-preview {
+		background: white;
+		border: 1px solid #e0e0e0;
+		border-radius: 4px;
+		padding: 0;
+		overflow: hidden;
+	}
+
+	.gt-librarian-preview-header {
+		background: #7e57c2;
+		color: white;
+		padding: 12px 16px;
+		font-size: 14px;
+	}
+
+	.gt-librarian-preview-body {
+		padding: 16px;
+
+		p {
+			margin: 8px 0;
+			font-size: 13px;
+		}
+
+		.gt-librarian-preview-note {
+			margin-top: 16px;
+			padding: 12px;
+			background: #f3f0f7;
+			border-left: 3px solid #7e57c2;
+			font-style: italic;
+			color: #666;
+		}
+	}
+}

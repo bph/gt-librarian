@@ -24,8 +24,8 @@ class GT_Librarian_Assets {
 	 * Enqueue assets for the frontend
 	 */
 	public function enqueue_frontend_assets() {
-		// Only enqueue if the block is used on the page
-		if ( has_block( 'gt-librarian/chat-embed' ) ) {
+		// Only enqueue if either block is used on the page
+		if ( has_block( 'gt-librarian/chat-embed' ) || has_block( 'gt-librarian/chat-widget' ) ) {
 			$this->enqueue_widget_assets();
 		}
 	}

@@ -125,6 +125,8 @@ class GT_Librarian_Settings {
 		$settings = array(
 			'default_bot'           => sanitize_text_field( $request->get_param( 'default_bot' ) ),
 			'default_avatar'        => esc_url_raw( $request->get_param( 'default_avatar' ) ),
+			'default_title'         => sanitize_text_field( $request->get_param( 'default_title' ) ),
+			'default_subtitle'      => sanitize_text_field( $request->get_param( 'default_subtitle' ) ),
 			'default_first_message' => sanitize_textarea_field( $request->get_param( 'default_first_message' ) ),
 			'default_color'         => sanitize_hex_color( $request->get_param( 'default_color' ) ),
 			'default_ttl'           => absint( $request->get_param( 'default_ttl' ) ),
@@ -157,6 +159,14 @@ class GT_Librarian_Settings {
 			'default_avatar'        => array(
 				'type'              => 'string',
 				'sanitize_callback' => 'esc_url_raw',
+			),
+			'default_title'         => array(
+				'type'              => 'string',
+				'sanitize_callback' => 'sanitize_text_field',
+			),
+			'default_subtitle'      => array(
+				'type'              => 'string',
+				'sanitize_callback' => 'sanitize_text_field',
 			),
 			'default_first_message' => array(
 				'type'              => 'string',
