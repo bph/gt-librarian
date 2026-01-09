@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       GT Librarian
  * Description:       AI-powered chat embed block for WordPress
- * Version:           1.0.0
+ * Version:           1.1.0
  * Requires at least: 6.0
  * Requires PHP:      7.4
  * Author:            Your Name
@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 // Define plugin constants
-define( 'GT_LIBRARIAN_VERSION', '1.0.0' );
+define( 'GT_LIBRARIAN_VERSION', '1.1.0' );
 define( 'GT_LIBRARIAN_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'GT_LIBRARIAN_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 

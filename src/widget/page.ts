@@ -241,7 +241,26 @@ const widgetStyles = `
         top: 10px;
         cursor: pointer;
         fill: var(--text-color);
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        transition: all 0.2s ease;
+    }
+
+    #chat-clear:hover {
+        filter: brightness(115%);
+    }
+
+    #chat-clear .icon {
         width: 12px;
+        height: 12px;
+    }
+
+    .chat-clear-text {
+        font-size: 12px;
+        font-weight: 500;
+        color: var(--text-color);
+        user-select: none;
     }
 
     .header-title {
@@ -316,7 +335,37 @@ const embedStyles = `
     }
 
     #chat-clear {
-        display: none;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 10;
+        cursor: pointer;
+        fill: var(--main-color);
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        transition: all 0.2s ease;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 6px 10px;
+        border-radius: 6px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    #chat-embed #chat-clear:hover {
+        filter: brightness(115%);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    }
+
+    #chat-embed #chat-clear .icon {
+        width: 12px;
+        height: 12px;
+    }
+
+    #chat-embed .chat-clear-text {
+        font-size: 12px;
+        font-weight: 500;
+        color: var(--main-color);
+        user-select: none;
     }
 
     .loader {
@@ -353,8 +402,9 @@ export const widgetHTML = `
                 <div id="chat-close">
                     ${closeIcon}
                 </div>
-                <div id="chat-clear">
+                <div id="chat-clear" title="Clear chat history" aria-label="Clear chat history">
                     ${refreshIcon}
+                    <span class="chat-clear-text">Clear</span>
                 </div>
             </div>
         </div>
@@ -365,8 +415,9 @@ export const embedHTML = `
     <style>${embedStyles}</style>
     <div id="chat-embed" part="widget">
         <div class="loader"></div>
-        <div id="chat-clear">
+        <div id="chat-clear" title="Clear chat history" aria-label="Clear chat history">
             ${refreshIcon}
+            <span class="chat-clear-text">Clear</span>
         </div>
         <div id="chat-content" />
     </div>

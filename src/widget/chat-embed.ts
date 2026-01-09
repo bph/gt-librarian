@@ -136,9 +136,11 @@ export class ChatEmbed extends HTMLElement {
   }
 
   public clearChat() {
-    if (this._chatLogic) {
-      this._chatLogic.clearChat();
-      this.load();
+    if (confirm("This will clear your current chat session. Continue?")) {
+      if (this._chatLogic) {
+        this._chatLogic.clearChat();
+        this.load();
+      }
     }
   }
 

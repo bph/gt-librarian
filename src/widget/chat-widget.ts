@@ -210,9 +210,11 @@ export class ChatWidget extends HTMLElement {
   }
 
   private clearChat() {
-    if (this._chatLogic) {
-      this._chatLogic.clearChat();
-      this.load();
+    if (confirm("This will clear your current chat session. Continue?")) {
+      if (this._chatLogic) {
+        this._chatLogic.clearChat();
+        this.load();
+      }
     }
   }
 
