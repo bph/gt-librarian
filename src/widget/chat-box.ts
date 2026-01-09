@@ -121,6 +121,20 @@ export class ChatLogic {
     this._chatElementRef!.inputAreaStyle = this.getInputAreaStyle();
     this._chatElementRef!.textInput = this.getTextInputStyle();
     this._chatElementRef!.submitButtonStyles = this.getSubmitButtonStyle();
+    this._chatElementRef!.auxiliaryStyle = `
+      :host {
+        --deep-chat-button-width: 40px;
+        --deep-chat-button-height: 40px;
+      }
+      .loading-message-text {
+        display: none;
+      }
+      .dots-jumping > div {
+        width: 8px;
+        height: 8px;
+        background-color: #9ca3af;
+      }
+    `;
   }
 
   private getMessageStyles() {

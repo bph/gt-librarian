@@ -11,6 +11,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Renamed blocks for clarity: "GT Librarian Chat" → "GT Librarian - Inline Chat" and "GT Librarian Chat Widget" → "GT Librarian - Floating Chat"
 - Updated block descriptions to better explain the difference between inline and floating chat interfaces
 
+### Fixed
+- Styled loading indicator (AI thinking indicator) with smaller, more subtle jumping dots and constrained button sizes using deep-chat's auxiliaryStyle API
+
 ## [1.2.1] - 2026-01-09
 
 ### Fixed
